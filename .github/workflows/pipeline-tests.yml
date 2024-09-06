@@ -11,8 +11,8 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-    - run: npm test src/products/products.controller.spec.ts
-    - run: npm test src/products/products.module.spec.ts
-    - run: npm test src/products/products.service.spec.ts
-    - run: npm test src/products/products.controller.spec.ts -- --coverage --collectCoverageFrom=products/products.controller.ts
+    - run: npm test backend/src/products/products.controller.spec.ts
+    - run: npm test backend/src/products/products.module.spec.ts
+    - run: npm test backend/src/products/products.service.spec.ts
+    - run: npm test backend/src/products/products.controller.spec.ts -- --coverage --collectCoverageFrom=products/products.controller.ts
     
