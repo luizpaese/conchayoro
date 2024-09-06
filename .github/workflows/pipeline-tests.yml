@@ -11,6 +11,7 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
+    - run: ls -lhtr
     - run: cd backend
     - run: npm test src/products/products.controller.spec.ts
     - run: npm test src/products/products.module.spec.ts
